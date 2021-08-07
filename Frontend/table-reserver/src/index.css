@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  background-color: blue;
+}
+
+.TablesContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.MyTexts{
+  color: white;
+}
+
+.TableItem{
+  width: 50%;
+  background-color: yellow;
+}
+
+.OneTable{
+  background-color: salmon;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  
+}
+
