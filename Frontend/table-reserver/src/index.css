@@ -29,6 +29,7 @@ code {
 
 .TableItem{
   width: 50%;
+  margin-bottom: 10px;
   background-color: yellow;
 }
 
