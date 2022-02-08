@@ -8,7 +8,7 @@ function MyTables (props){
     const [value, setDefaultValue] = useState(0);
     const [nameOfCustomer, setNameOfCustomer] = useState("");
     const [dateOfReservation, setDateOfReservation] = useState("");
-
+    const [reserveTablePopup, setReserveTablePopup] = useState(false);
     useEffect(() => {
         console.log("Component Mounted");
         return() =>{
@@ -18,7 +18,7 @@ function MyTables (props){
     
 
     const onClickTables = (e) =>{
-        
+        setReserveTablePopup(true);
         console.log("Table reserved");
         console.log(e);
         
@@ -47,6 +47,9 @@ function MyTables (props){
                 <button className="OneTable"> Table 6</button>
                 </div>                       
             </div>
+            <Popup trigger = {reserveTablePopup}>
+                <h4>This is a Popup</h4>
+            </Popup>
         </div>
     );    
 }

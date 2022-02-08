@@ -5,6 +5,7 @@ function Popup(props) {
     <div className='popup'>
       <div className='inner-popup'>
         <button>"Bestätigen</button>
+        {props.children}
       </div>
     </div>
   ): "";
